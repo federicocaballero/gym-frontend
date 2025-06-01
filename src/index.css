@@ -1,3 +1,18 @@
+/* 1. Asegura que html y body llenen toda la pantalla */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Elimina el flex/centrado del body para que tu .container pueda ocupar todo el alto */
+body {
+  display: block;
+  min-width: 320px;
+}
+
+/* ——— El resto de tus estilos se mantiene igual ——— */
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -20,14 +35,6 @@ a {
 }
 a:hover {
   color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {

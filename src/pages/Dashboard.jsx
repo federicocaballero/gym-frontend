@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 // import UpdatePaymentForm from '../components/UpdatePaymentForm';
 // import RegisterAttendanceForm from '../components/RegisterAttendanceForm';
 // import ClientList from '../components/ClientList';
-
+import '../modules/dashboard/styles/dashboard.css';
 export default function Dashboard() {
   const [memberData, setMemberData] = useState(null); // objeto o array de matches
   const [openPanel, setOpenPanel] = useState(''); // 'create','update','attendance','list'
@@ -20,7 +20,7 @@ export default function Dashboard() {
 //   };
 
   return (
-    <div>
+    <div className='container'>
         <h1>Dashboard</h1>
       {/* <Header />
 
