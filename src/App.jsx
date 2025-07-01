@@ -9,17 +9,13 @@ import CurrencyExchangeIcon from '@mui/icons-material/CurrencyExchange';
 
 function App() {
   return (
-    <div style={{ padding: "2rem" }}>
-      <CollapsibleSection
-        title="Buscar Alumno"
-        icon={<SearchIcon />}
-        defaultExpanded={true}
-      >
-        <SearchMember />
-      </CollapsibleSection>
+    <div style={{ padding: "0 2rem 2rem 2rem" }}>
+      <h1>Panel de Administración</h1>
+      <h3>Administre los socios, pagos y asistencias</h3>
+      <SearchMember />
 
       <CollapsibleSection
-        title="Create Member"
+        title="Registrar socio"
         icon={<AddCircleIcon />}
         defaultExpanded={true}
       >

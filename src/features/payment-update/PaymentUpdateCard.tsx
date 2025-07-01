@@ -55,7 +55,7 @@ export const UpdatePaymentForm: React.FC<UpdatePaymentFormProps> = ({ onSubmit }
         <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
           <TextField
             sx={{ flex: '1 1 200px' }}
-            label="Surname"
+            label="Apellido"
             name="surname"
             value={formData.surname}
             onChange={handleChange}
@@ -64,7 +64,7 @@ export const UpdatePaymentForm: React.FC<UpdatePaymentFormProps> = ({ onSubmit }
           />
           <TextField
             sx={{ flex: '1 1 200px' }}
-            label="Last 3 Digits of DNI"
+            label="Ultimos 3 dígitos de DNI"
             name="dniLastDigits"
             value={formData.dniLastDigits}
             onChange={handleChange}
@@ -74,29 +74,16 @@ export const UpdatePaymentForm: React.FC<UpdatePaymentFormProps> = ({ onSubmit }
           />
         </Box>
 
-        {/* New Amount */}
+        {/*Amount */}
         <TextField
           fullWidth
-          label="New Amount"
+          label="Monto"
           name="newAmount"
           value={formData.newAmount}
           onChange={handleChange}
           placeholder="20000"
           type="number"
           required
-        />
-
-        {/* Checkbox de confirmación */}
-        <FormControlLabel
-          control={
-            <Checkbox
-              name="confirmUpdate"
-              checked={formData.confirmUpdate}
-              onChange={handleChange}
-              color="primary"
-            />
-          }
-          label="Update Payment"
         />
       </Box>
 
@@ -107,9 +94,9 @@ export const UpdatePaymentForm: React.FC<UpdatePaymentFormProps> = ({ onSubmit }
           variant="contained"
           color="primary"
           size="large"
-          disabled={!formData.confirmUpdate}
+          style={{ backgroundColor: '#ffcc14 ', color: 'black', borderRadius: '10px' }}
         >
-          Confirm Update
+          Registrar pago
         </Button>
       </Box>
     </Box>

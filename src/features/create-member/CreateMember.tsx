@@ -60,7 +60,7 @@ export const CreateMemberForm: React.FC<CreateMemberFormProps> = ({ onSubmit }) 
           />
           <TextField
             sx={{ flex: '1 1 200px' }}
-            label="Last Name"
+            label="Apellido"
             name="lastName"
             value={formData.lastName}
             onChange={handleChange}
@@ -73,7 +73,7 @@ export const CreateMemberForm: React.FC<CreateMemberFormProps> = ({ onSubmit }) 
         <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
           <TextField
             sx={{ flex: '1 1 200px' }}
-            label="Phone"
+            label="Teléfono"
             name="phone"
             value={formData.phone}
             onChange={handleChange}
@@ -82,7 +82,7 @@ export const CreateMemberForm: React.FC<CreateMemberFormProps> = ({ onSubmit }) 
           />
           <TextField
             sx={{ flex: '1 1 200px' }}
-            label="Trial Days"
+            label="Días de prueba"
             name="trialDays"
             value={formData.trialDays}
             onChange={handleChange}
@@ -94,7 +94,7 @@ export const CreateMemberForm: React.FC<CreateMemberFormProps> = ({ onSubmit }) 
         <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
           <TextField
             sx={{ flex: '1 1 200px' }}
-            label="First Name"
+            label="Nombre"
             name="firstName"
             value={formData.firstName}
             onChange={handleChange}
@@ -104,7 +104,7 @@ export const CreateMemberForm: React.FC<CreateMemberFormProps> = ({ onSubmit }) 
           <TextField
             select
             sx={{ flex: '1 1 200px' }}
-            label="Role"
+            label="Rol"
             name="role"
             value={formData.role}
             onChange={handleChange}
@@ -121,7 +121,7 @@ export const CreateMemberForm: React.FC<CreateMemberFormProps> = ({ onSubmit }) 
         {/* Fila 4: Membership Amount */}
         <TextField
           fullWidth
-          label="Membership Amount"
+          label="Monto de membresía"
           name="membershipAmount"
           value={formData.membershipAmount}
           onChange={handleChange}
@@ -138,8 +138,9 @@ export const CreateMemberForm: React.FC<CreateMemberFormProps> = ({ onSubmit }) 
           variant="contained"
           color="primary"
           size="large"
+          style={{ backgroundColor: '#ffcc14 ', color: 'black', borderRadius: '10px' }}
         >
-          Create Member
+          Registrar socio
         </Button>
       </Box>
     </Box>
